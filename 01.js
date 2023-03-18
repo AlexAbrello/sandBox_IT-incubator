@@ -8,6 +8,7 @@ function sumTwoSmallestNumbers(numbers) {
    return newArr.reduce( (acum, item) => acum + item, 0)
 }
 
-function sumTwo(numbers) {
-   
+function sum(arr) {
+  arr.sort((a, b) => a - b)
+  return arr[0] + arr[1]
 }
